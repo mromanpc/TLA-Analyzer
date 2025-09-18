@@ -1,37 +1,28 @@
-# TLA+ NLP Requirements Analyzer & Prover (Tailwind-ready)
+# TLA+ NLP Requirements Analyzer & Prover
 
-This archive includes:
-- **frontend/** Vite + React with Tailwind configured
-- **backend/** Express mock prover API
+Turn TLA+ modules into actionable requirements, rewrite NFRs into TLA+ monitor templates, and run quick proof checks through a backend API.
 
-## Run
-```bash
-# Terminal 1
-cd backend
-npm i
-npm run dev
-
-# Terminal 2
-cd ../frontend
-npm i
-npm run dev
-```
+**Live demo:**  
+https://Shubha-ml.github.io/TLA-Analyzer/?prover=https://your-backend.example.com/api/prove  
+Replace the backend URL with your deployed API. The app will remember it.
 
 ---
 
-## ☁️ One‑click Deploy (backend)
-After you push this repo to GitHub under **YOUR-USERNAME/YOUR-REPO**, you can enable one-click deploys:
+## What it does
+- Extracts candidate requirements from comments and spec cues in a `.tla` file
+- Classifies each as Functional or Non-functional and sets a priority
+- Suggests concise rewrites and acceptance criteria
+- Rewrites NFRs into ready-to-paste TLA+ “monitor” snippets with a theorem
+- Calls a prover API for quick checks, with a clear mock fallback if unreachable
+- Exports requirements to JSON and CSV (UTF-8 BOM for Excel)
 
-### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/YOUR-USERNAME/YOUR-REPO)
+---
 
-### Render
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/YOUR-USERNAME/YOUR-REPO)
+## Run locally
 
-> Replace `YOUR-USERNAME/YOUR-REPO` above with your actual GitHub repo URL.
-
-### Frontend live link
-If you already deployed the frontend to GitHub Pages, set the backend URL at runtime using a query param:
-```
-https://YOUR-USERNAME.github.io/tla-analyzer/?prover=https://your-backend.example.com/api/prove
-```
+### Backend
+```bash
+cd backend
+npm i
+npm run dev
+# http://localhost:8787

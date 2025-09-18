@@ -112,7 +112,7 @@ export default defineConfig({
   plugins: [react()],
   server: { proxy: { "/api": "http://localhost:8787" } },
 });
-Deploy (recommended: Pages + Render)
+### Deploy (recommended: Pages + Render)
 1) Backend on Render
 Dashboard → New → Web Service → connect repo Shubha-ml/TLA-Analyzer
 

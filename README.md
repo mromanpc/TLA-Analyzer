@@ -156,47 +156,7 @@ cd frontend
 npm install
 npm run build
 npm run deploy
-Your site:
 
-cpp
-Copy code
-https://Shubha-ml.github.io/TLA-Analyzer/
-Connect it to your backend once with a query string:
-
-perl
-Copy code
-https://Shubha-ml.github.io/TLA-Analyzer/?prover=https://YOUR-BACKEND.onrender.com/api/prove
-GitHub Actions alternative (auto deploy on push) in .github/workflows/pages.yml:
-
-yaml
-Copy code
-name: Deploy frontend to GitHub Pages
-on:
-  push: { branches: [ main ] }
-  workflow_dispatch:
-permissions: { contents: read, pages: write, id-token: write }
-concurrency: { group: pages, cancel-in-progress: true }
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    defaults: { run: { working-directory: frontend } }
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 20, cache: npm, cache-dependency-path: frontend/package.json }
-      - run: npm ci
-      - run: npm run build
-        env:
-          VITE_PROVER_URL: ${{ secrets.VITE_PROVER_URL }} # optional
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: frontend/dist }
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment: { name: github-pages, url: ${{ steps.deployment.outputs.page_url }} }
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
 ### Alternative deploys
 Vercel (frontend) + Render or Heroku (backend)
 

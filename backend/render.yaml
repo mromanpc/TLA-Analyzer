@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tla-prover-api
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    autoDeploy: true
+    envVars:
+      - key: PROVER_TIMEOUT_MS
+        value: "10000"

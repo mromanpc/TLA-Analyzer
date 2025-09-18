@@ -1,0 +1,23 @@
+{
+  "name": "tla-prover-api",
+  "description": "Express API for TLA+ Analyzer (mock prover)",
+  "env": {
+    "PROVER_TIMEOUT_MS": {
+      "description": "Request timeout (ms)",
+      "value": "10000"
+    }
+  },
+  "scripts": {},
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

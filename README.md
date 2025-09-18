@@ -80,18 +80,23 @@ Copy code
 ## Run locally
 
 ### Backend
-```bash
+bash
 cd backend
 npm install
 npm run dev
-# -> http://localhost:8787
-Frontend
+
+ -> http://localhost:8787
+
+---
+
+### Frontend
 bash
 Copy code
 cd frontend
 npm install
 npm run dev
-# -> http://localhost:5173
+ -> http://localhost:5173
+
 Point the frontend to your backend in one of three ways:
 
 add .env in frontend with VITE_PROVER_URL="http://localhost:8787/api/prove"
@@ -137,7 +142,7 @@ One-click buttons (after pushing your repo)
 Heroku
 
 
-Render
+### Render
 
 
 2) Frontend on GitHub Pages
@@ -192,7 +197,7 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-Alternative deploys
+### Alternative deploys
 Vercel (frontend) + Render or Heroku (backend)
 
 Import frontend into Vercel, add VITE_PROVER_URL in Project Settings.
@@ -205,7 +210,7 @@ Codespaces for a zero install demo
 
 Start backend and frontend in two terminals, copy the forwarded URLs, set ?prover=.
 
-Configuration
+### Configuration
 Frontend
 .env in frontend:
 
@@ -228,7 +233,7 @@ API: /api/prove
 
 CORS is enabled for any origin by default
 
-API
+### API
 POST /api/prove
 Request
 
@@ -249,7 +254,7 @@ Copy code
   ],
   "evidence": "Examined Demo with 1 invariant(s)."
 }
-Security and CORS
+### Security and CORS
 Production recommendation, restrict origins:
 
 js
@@ -262,7 +267,7 @@ const allowed = [
 app.use(cors({
   origin: (origin, cb) => cb(null, !origin || allowed.includes(origin))
 }));
-Troubleshooting
+### Troubleshooting
 Message: “Prover backend unreachable. Used mock prover.”
 
 Check backend:
@@ -289,7 +294,7 @@ Make sure tailwind.config.js has:
 js
 Copy code
 content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"]
-FAQ
+### FAQ
 Does the tool upload my TLA+ file?
 No, not until you click Prove. The proof request posts your TLA+ text to your configured backend URL.
 
@@ -299,7 +304,7 @@ Yes. Replace the mock logic in backend/server.js with calls to your prover and k
 Can I change the classification rules?
 Yes. The heuristics live in frontend/src/App.jsx (FN_KEYWORDS, NFR_CLUSTERS, PRIORITY_RULES).
 
-Roadmap
+### Roadmap
 Pluggable proof engines behind /api/prove
 
 Stronger NLP and better rationales
@@ -310,5 +315,5 @@ Shareable links for filtered views
 
 Unit tests for extractors and formatters
 
-Contributing
+### Contributing
 Issues and pull requests are welcome. Please describe the use case and attach a small .tla example when possible.

